@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Galeria
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let image of list">
+        <img [src]="image.url" alt="">
+        <ion-card-content>
+            <ion-card-title>
+                {{image.title}}
+            </ion-card-title>
+            <p>{{image.thumbnailUrl}}</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

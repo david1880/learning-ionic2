@@ -9,14 +9,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="card-background-page">
     <ion-card *ngFor="let image of list">
         <img [src]="image.url" alt="">
-        <ion-card-content>
-            <ion-card-title>
-                {{image.title}}
-            </ion-card-title>
-            <p>{{image.thumbnailUrl}}</p>
-        </ion-card-content>
+        <div class="card-title">{{image.title}}</div>
+        <div class="card-subtitle"><p>{{image.thumbnailUrl}}</p></div>
+            
     </ion-card>
 </ion-content>

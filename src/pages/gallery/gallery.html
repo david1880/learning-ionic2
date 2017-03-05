@@ -10,17 +10,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let image of list">
-    <img [src]="image.url" alt="">
-    <ion-card-content>
-      <ion-card-title>{{image.title}}</ion-card-title>
-      <p>{{image.thumbnailUrl}}</p>
+  <ion-list>
+    <ion-item *ngFor="let image of list">
+      <ion-avatar item-left>
+        <img [src]="image.url" alt="">
+      </ion-avatar>
+      <h2>{{image.title}}</h2>
+      <p>image.thumbnailUrl</p>
       <ion-buttons end>
         <button ion-button outline (click)="itemTapped(image)">Ver</button>
       </ion-buttons>
-      
-    </ion-card-content>
-  </ion-card>
+    </ion-item>
+  </ion-list>
 </ion-content>
-
 

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Imagen
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="selected.url" alt="">
+    <ion-card-content>
+      <ion-card-title>{{selected.title}}</ion-card-title>
+      <p>{{selected.thumbnailUrl}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

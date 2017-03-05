@@ -5,12 +5,14 @@ import { ImageService } from './services/image.service';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { GalleryPage } from '../pages/gallery/gallery';
+import { ImagePage } from '../pages/image/image';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    GalleryPage
+    GalleryPage,
+    ImagePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -20,7 +22,8 @@ import { GalleryPage } from '../pages/gallery/gallery';
   entryComponents: [
     MyApp,
     HomePage,
-    GalleryPage
+    GalleryPage,
+    ImagePage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},

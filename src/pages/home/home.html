@@ -1,6 +1,9 @@
 <ion-header>
   <ion-navbar>
+    <!-- ion-button da el estilo de button de ionic -->
+    <!-- menuToggle hace el toggle del menu al hacer tap -->
     <button ion-button menuToggle>
+      <!-- name define el icono a mostrar -->
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
@@ -9,6 +12,8 @@
   </ion-navbar>
 </ion-header>
 
+<!-- padding define un padding predeterminado por ionic para el elemento -->
+<!-- en ion-content se carga el contenido de la page, solo se visualizara uno -->
 <ion-content padding>
   <ion-card>
     <ion-card-header>
@@ -17,9 +22,9 @@
     <ion-card-content>
       <p>Logros:</p>
       <ul>
-        <li>Menu</li>
+        <li>Menu y navegación</li>
         <li>Servicio de imagenes</li>
-        <li></li>
+        <li>Paso de parametros (objetos) entre componentes</li>
         <li></li>
       </ul>
     </ion-card-content>

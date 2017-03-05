@@ -10,13 +10,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <h3 class="load" *ngIf="!list">Cargando!</h3>
+  
+  <ion-list *ngIf="list">
     <ion-item *ngFor="let image of list">
       <ion-avatar item-left>
         <img [src]="image.url" alt="">
       </ion-avatar>
       <h2>{{image.title}}</h2>
-      <p>image.thumbnailUrl</p>
+      <p>{{image.thumbnailUrl}}</p>
       <ion-buttons end>
         <button ion-button outline (click)="itemTapped(image)">Ver</button>
       </ion-buttons>

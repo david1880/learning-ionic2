@@ -8,24 +8,24 @@ import { GalleryPage } from '../pages/gallery/gallery';
 import { ImagePage } from '../pages/image/image';
 
 @NgModule({
-  declarations: [
+  declarations: [     // hace visibles los components para la app
     MyApp,
     HomePage,
     GalleryPage,
     ImagePage
   ],
-  imports: [
+  imports: [          // importa los modulos necesarios
     IonicModule.forRoot(MyApp),
     HttpModule
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
+  entryComponents: [  // habilita la creacion de los componentes por el ¿ion-nav?
     MyApp,
     HomePage,
     GalleryPage,
     ImagePage
   ],
-  providers: [
+  providers: [        // se declaran los servicios
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ImageService
   ]

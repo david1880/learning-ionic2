@@ -1,14 +1,13 @@
 <ion-menu [content]="content">
-    
     <ion-header>
         <ion-toolbar>
             <ion-title>Menu</ion-title>
         </ion-toolbar>
     </ion-header>
-
-
     <ion-content>
         <ion-list>
+            <!-- menuClose, cierra el menu tras un tap en el elemento -->
+            <!-- ion-item define el elemento como un elemento de lista ionic -->
             <button menuClose ion-item *ngFor="let p of pages" (click)="goTo(p)">
                 {{p.title}}
             </button>
@@ -16,8 +15,8 @@
     </ion-content>
 </ion-menu>
 
-
-
-
-
+<!--
+    ion-nav se encarga de generar el componente que haya en rootPage
+    #content introduce el menu en la app
+-->
 <ion-nav [root]="rootPage" #content ></ion-nav>
